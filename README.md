@@ -1,4 +1,6 @@
-# grocy-docker
+# grocy-docker (Raspberry-PI)
+
+*This is the default grocy-docker image, but with support for arm/v7*
 
 ERP beyond your fridge - now containerized!
 
