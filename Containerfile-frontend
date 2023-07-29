@@ -1,7 +1,7 @@
 FROM arm64v8/alpine:3.18.2
 LABEL maintainer "Talmai Oliveira <to@talm.ai>, James Addison <jay@jp-hosting.net>"
 
-ARG GROCY_VERSION
+ARG GROCY_VERSION=v3.3.2
 
 # Install build-time dependencies
 RUN     apk add --no-cache \
