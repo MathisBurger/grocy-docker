@@ -3,13 +3,7 @@ version: '2.4'
 services:
 
   frontend:
-    image: "grocy/frontend:v3.3.2"
-    build:
-      args:
-        GROCY_VERSION: v3.3.2
-        PLATFORM: linux/amd64
-      context: .
-      dockerfile: Containerfile-frontend
+    image: ghcr.io/mathisburger/grocy-docker-backend:latest
     depends_on:
       - backend
     ports:
@@ -20,13 +14,7 @@ services:
     restart: unless-stopped
 
   backend:
-    image: "grocy/backend:v3.3.2"
-    build:
-      args:
-        GROCY_VERSION: v3.3.2
-        PLATFORM: linux/amd64
-      context: .
-      dockerfile: Containerfile-backend
+    image: ghcr.io/mathisburger/grocy-docker-backend:latest
     expose:
       - '9000'
     read_only: true
