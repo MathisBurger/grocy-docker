@@ -3,7 +3,7 @@ version: '2.4'
 services:
 
   frontend:
-    image: ghcr.io/mathisburger/grocy-docker-backend:latest
+    image: ghcr.io/mathisburger/grocy-docker-frontend:latest
     depends_on:
       - backend
     ports:
